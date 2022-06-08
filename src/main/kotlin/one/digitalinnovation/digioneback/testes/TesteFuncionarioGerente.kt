@@ -7,7 +7,9 @@ import java.math.BigDecimal
 
 
 fun main(){
-    val joao = Gerente(name = "Joao", cpf = "123.123.123-77", salario = 15000.2)
+    val joao = Gerente(name = "Joao", cpf = "123.123.123-77", salario = 15000.2, senha = "senha123")
 
     ImprimirRelatorioFuncionario.imprimirRelatorio(joao)
+
+    TesteAutenticacao().autentica(joao)
 }
